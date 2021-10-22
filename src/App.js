@@ -1,9 +1,11 @@
-import logo from './logo.svg';
+// import logo from './logo.svg';
 import './App.css';
 import { ToastContainer } from 'react-toastify';
-import Navbar from './components/Navbar';
 import { Route, Switch } from 'react-router-dom';
+
+import Navbar from './components/Navbar';
 import Home from './components/Home';
+import AddContact from './components/AddContact';
 
 const App = () => {
   return (
@@ -13,7 +15,7 @@ const App = () => {
       <Switch>
         <Route exact path="/" component = {() => <Home />} />
         <Route path="/add">
-          <h3>Add Component</h3>
+          <AddContact />
         </Route>
         <Route path="/edit/:id">
           <h3>Edit Component</h3>
